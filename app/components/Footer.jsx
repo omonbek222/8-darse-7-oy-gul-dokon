@@ -2,10 +2,10 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <>
-      <div className="flex justify-between bg-[#46A3581A] p-[23px] max-lg:flex-col max-lg:items-center gap-2.5">
-        <div>
+      <div className="flex w-[1165px] m-auto justify-between bg-[#46A3581A] p-[23px] max-lg:flex-col max-lg:items-center gap-2.5">
+        <div className="">
           <Image
-            src=""
+            src="/logo 1.png"
             alt="gul"
             width={100}
             height={100}
@@ -137,7 +137,7 @@ export default function Footer() {
               className="w-[30px] h-[30px] cursor-pointer"
             />
             <Image
-              src="/mastercard (1).svg"
+              src="/mastercard.svg"
               alt="mastercard"
               width={100}
               height={100}
@@ -145,7 +145,7 @@ export default function Footer() {
               className="w-[30px] h-[30px] cursor-pointer"
             />
             <Image
-              src="/visa (1).svg"
+              src="/visa.svg"
               alt="visa"
               width={100}
               height={100}

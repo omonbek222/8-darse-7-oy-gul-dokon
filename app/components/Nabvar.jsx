@@ -5,7 +5,7 @@ export default function Navbar() {
       <div className="w-[1165px] h-[80px] m-auto flex items-center justify-between  p-8  align-center ">
         <div>
           <Image
-            src="/logo.svg"
+            src="/logo 1.png"
             alt="Logo"
             width={100}
             height={50}

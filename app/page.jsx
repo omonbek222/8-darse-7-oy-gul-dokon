@@ -7,13 +7,13 @@ import Header from "./components/Header"
 import Blog from "./components/Blog"
 export default function Home() {
   return (
-    <div>
+    <div className="w-[1200px] m-auto">
       <Navbar/>
-      <Footer/>
       <Swiper/>
+      <Blog/>
       <Hero/>
       <Header/>
-      <Blog/>
+      <Footer/>
     </div>
   );
 }

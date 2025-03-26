@@ -41,7 +41,7 @@ const SwiperComponent = () => {
             </div>
             <div className="flex-[1] relative flex justify-center items-center max-md:hidden">
               <Image
-                src="/image.png"
+                src="/tuvak_gul_1.png"
                 alt="Slide 1"
                 width={100}
                 height={50}
@@ -73,7 +73,7 @@ const SwiperComponent = () => {
             </div>
             <div className="flex-[1] relative flex justify-center items-center max-md:hidden">
               <Image
-                src="/image copy.png"
+                src="/hero-flower-1.png"
                 alt="Slide 1"
                 width={100}
                 height={50}
@@ -105,7 +105,7 @@ const SwiperComponent = () => {
             </div>
             <div className="flex-[1] relative flex justify-center items-center max-md:hidden">
               <Image
-                src="/gul.png"
+                src="/hero-flower-2.png"
                 alt="Slide 1"
                 width={100}
                 height={50}
