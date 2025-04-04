@@ -14,18 +14,23 @@ const fetchUsers = async () => {
 
 const CategoriesMain = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const category = searchParams.get("category") || "house-plants";
+  
+  
+  const rangeMin = searchParams.get("range_min") || 0;
+  const rangeMax = searchParams.get("range_max") || 1000;
 
   const { data, isLoading, error } = useQuery({
     queryKey: ["users"],
     queryFn: fetchUsers,
   });
-  const updateSort = (sortType) => {
-    searchParams.set("category", sortType);
-    setSearchParams(searchParams);
-  };
-  console.log(data);
   
+  const updateSort = (sortType) => {
+    const newSearchParams = new URLSearchParams(searchParams);
+    newSearchParams.set("category", sortType);
+    setSearchParams(newSearchParams);
+  };
+
+  console.log(data);
 
   if (isLoading) return <p>Yuklanmoqda...</p>;
   if (error) return <p>Xatolik yuz berdi: {error.message}</p>;
@@ -39,9 +44,7 @@ const CategoriesMain = () => {
             <div
               onClick={() => updateSort(route_path)}
               key={index}
-              className={`flex text-base font-normal cursor-pointer hover:text-[#46A358] transition-colors ${
-                category === route_path && "text-green-600"
-              }`}
+              className={`flex text-base font-normal cursor-pointer hover:text-[#46A358] transition-colors ${searchParams.get("category") === route_path && "text-green-600"}`}
             >
               <h1>{title}</h1>
               <h1>({count})</h1>
@@ -51,7 +54,7 @@ const CategoriesMain = () => {
       </div>
       <div className="mt-[15px] text-start">
         <h3 className="font-bold ">Price Range</h3>
-        <Slider range defaultValue={[1, 1000]} max={1000} />
+        <Slider range defaultValue={[rangeMin, rangeMax]} max={1000} />
         <p className="font-normal">
           Price: <span className="font-bold text-[#46A358]">$</span>
         </p>

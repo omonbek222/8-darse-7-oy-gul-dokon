@@ -30,19 +30,19 @@ function MainMapping() {
       <div className="border w-[970px] mt-[30px] pl-[30px]">
         <div className="flex justify-between ">
           <div
-            onClick={() => updateType(data?.data?.route_path)}
+           
             className={` gap-8 p-[5px] max-sm:gap-4 flex text-base font-normal cursor-pointer  transition-colors 
               
               
             `}
           >
-            <h3 className="cursor-pointer font-normal hover:text-[#46A358] transition-colors false">
+            <h3  onClick={() => updateType("All plants")}  className="cursor-pointer font-normal hover:text-[#46A358] transition-colors false">
               All Plants
             </h3>
-            <h3 className="cursor-pointer font-normal hover:text-[#46A358] transition-colors pb-[3px]">
+            <h3 onClick={() => updateType("New Arivvals")}   className="cursor-pointer font-normal hover:text-[#46A358] transition-colors pb-[3px]">
               New Arrivvals
             </h3>
-            <h3 className="cursor-pointer font-normal hover:text-[#46A358] transition-colors false">
+            <h3 onClick={() => updateType("Sale")}  className="cursor-pointer font-normal hover:text-[#46A358] transition-colors false">
               Sale
             </h3>
           </div>
