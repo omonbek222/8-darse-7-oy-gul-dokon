@@ -173,7 +173,7 @@ const Dashboard = () => {
                                 aria-required="true"
                                 className="ant-input ant-input-lg css-k7429z"
                                 type="text"
-                                // value="farrux"
+                                // value="omonbek"
                               />
                             </div>
                           </div>
@@ -202,7 +202,7 @@ const Dashboard = () => {
                                 aria-required="true"
                                 className="ant-input ant-input-lg css-k7429z"
                                 type="text"
-                                // value="farrux"
+                                // value="omonbek"
                               />
                             </div>
                           </div>
@@ -244,7 +244,7 @@ const Dashboard = () => {
                                 aria-required="true"
                                 className="ant-input ant-input-lg css-k7429z"
                                 type="text"
-                                // value="farruxtorayev590@gmail.com"
+                                
                               />
                             </div>
                           </div>
@@ -278,7 +278,7 @@ const Dashboard = () => {
                                     aria-required="true"
                                     className="ant-input ant-input-lg css-k7429z"
                                     type="text"
-                                    // value=""
+                                    // value="omonbek"
                                   />
                                 </span>
                               </span>
@@ -316,7 +316,7 @@ const Dashboard = () => {
                                 aria-required="true"
                                 className="ant-input ant-input-lg css-k7429z"
                                 type="text"
-                                // value=""
+                                // value="omonbe_222"
                               />
                             </div>
                           </div>

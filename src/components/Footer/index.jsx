@@ -120,7 +120,7 @@ const Footer = () => {
             
             className="w-5 h-5"
           />
-          <p className="text-sm">+88 01911 717 490</p>
+          <p className="text-sm">998 95 020 93 50</p>
         </div>
       </div>
       <div className="flex justify-between p-[23px] max-sm:flex-col max-sm:gap-4">
