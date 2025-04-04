@@ -15,7 +15,7 @@ const fetchUsers = async () => {
 const CategoriesMain = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   
-  
+ 
   const rangeMin = searchParams.get("range_min") || 0;
   const rangeMax = searchParams.get("range_max") || 1000;
 
